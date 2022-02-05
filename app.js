@@ -34,7 +34,6 @@ function generate() {
     removeComment()
 }
 function submit() {
-    removeComment()
     var generate = document.getElementById('generateDisplay').value
     var display = document.getElementById('display').value
     console.log(typeof generate, generate);
