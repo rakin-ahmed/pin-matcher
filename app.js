@@ -34,6 +34,7 @@ function generate() {
     removeComment()
 }
 function submit() {
+    removeComment()
     var generate = document.getElementById('generateDisplay').value
     var display = document.getElementById('display').value
     console.log(typeof generate, generate);
@@ -41,9 +42,7 @@ function submit() {
     if (generate > 0 && display > 0) {
         if (generate == display) {
             document.getElementById('correct').style.display = "block";
-            document.getElementById('false').style.display = "none";
         } else {
-            document.getElementById('correct').style.display = "none";
             document.getElementById('false').style.display = "block";
 
         }
